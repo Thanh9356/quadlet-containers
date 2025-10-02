@@ -1,0 +1,12 @@
+[Unit]
+Description=Microsoft SQL Server 2022
+
+[Container]
+Image=mssql.image
+Environment=ACCEPT_EULA=Y
+Environment=MSSQL_SA_PASSWORD=0R)P0a4MP(HT*jVO
+PublishPort=1401:1433
+Volume=mssql.volume:/var/opt/mssql:rw
+
+[Install]
+WantedBy=default.target
